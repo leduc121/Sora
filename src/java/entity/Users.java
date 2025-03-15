@@ -98,7 +98,7 @@ public class Users {
     public void setCreated_at(Date created_at) {
         this.created_at = created_at;
     }
-
+    
     @Override
     public String toString() {
         return "Users{" + "user_id=" + user_id + ", full_name=" + full_name + ", email=" + email + ", password_hash=" + password_hash + ", phone=" + phone + ", address=" + address + ", role_id=" + role_id + ", created_at=" + created_at + '}';
