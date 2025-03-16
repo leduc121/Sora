@@ -5,9 +5,19 @@
         <group>
             <file>file:/D:/Kì%204/PRJ/SORA/SORA/web/index.html</file>
             <file>file:/D:/Kì%204/PRJ/SORA/SORA/src/java/context/DBContext.java</file>
+            <file>file:/D:/Kì%204/PRJ/SORA/SORA/src/java/entity/Products.java</file>
+            <file>file:/D:/Kì%204/PRJ/SORA/SORA/src/java/control/HomeController.java</file>
+            <file>file:/D:/Kì%204/PRJ/SORA/SORA/src/java/entity/Users.java</file>
+            <file>file:/D:/Kì%204/PRJ/SORA/SORA/src/java/entity/Orders.java</file>
+            <file>file:/D:/Kì%204/PRJ/SORA/SORA/src/java/dao/ProductsDAO.java</file>
+            <file>file:/D:/Kì%204/PRJ/SORA/SORA/src/java/entity/Categories.java</file>
             <file>file:/D:/Kì%204/PRJ/SORA/SORA/web/WEB-INF/web.xml</file>
             <file>file:/D:/Kì%204/PRJ/SORA/SORA/web/home.jsp</file>
+            <file>file:/D:/Kì%204/PRJ/SORA/SORA/src/java/entity/Roles.java</file>
+            <file>file:/D:/Kì%204/PRJ/SORA/SORA/src/java/entity/ShoppingCart.java</file>
             <file>file:/D:/Kì%204/PRJ/SORA/SORA/web/css/style.css</file>
+            <file>file:/D:/Kì%204/PRJ/SORA/SORA/src/java/entity/OrderDetails.java</file>
+            <file>file:/D:/Kì%204/PRJ/SORA/SORA/src/java/entity/Payments.java</file>
         </group>
     </open-files>
 </project-private>

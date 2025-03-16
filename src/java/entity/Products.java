@@ -15,7 +15,7 @@ public class Products {
     private String description;
     private double price;
     private String brand;
-    private double size;
+    private String size;
     private int stock_quantity;
     private int category_id;
     private String image_url;
@@ -23,7 +23,7 @@ public class Products {
     public Products() {
     }
 
-    public Products(int product_id, String name, String description, double price, String brand, double size, int stock_quantity, int category_id, String image_url) {
+    public Products(int product_id, String name, String description, double price, String brand, String size, int stock_quantity, int category_id, String image_url) {
         this.product_id = product_id;
         this.name = name;
         this.description = description;
@@ -75,11 +75,11 @@ public class Products {
         this.brand = brand;
     }
 
-    public double getSize() {
+    public String getSize() {
         return size;
     }
 
-    public void setSize(double size) {
+    public void setSize(String size) {
         this.size = size;
     }
 
@@ -109,8 +109,10 @@ public class Products {
 
     @Override
     public String toString() {
-        return "Produtcs{" + "product_id=" + product_id + ", name=" + name + ", description=" + description + ", price=" + price + ", brand=" + brand + ", size=" + size + ", stock_quantity=" + stock_quantity + ", category_id=" + category_id + ", image_url=" + image_url + '}';
+        return "Products{" + "product_id=" + product_id + ", name=" + name + ", description=" + description + ", price=" + price + ", brand=" + brand + ", size=" + size + ", stock_quantity=" + stock_quantity + ", category_id=" + category_id + ", image_url=" + image_url + '}';
     }
+
+    
     
     
     

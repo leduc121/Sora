@@ -36,7 +36,7 @@ public class ProductsDAO {
                         rs.getString(3),
                         rs.getDouble(4),
                         rs.getString(5),
-                        rs.getDouble(6),
+                        rs.getString(6),
                         rs.getInt(7),
                         rs.getInt(8),
                         rs.getString(9)));
