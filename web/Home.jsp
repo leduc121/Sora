@@ -57,9 +57,11 @@
         <section class="jumbotron text-center">
             <div class="container">
                 <h1 class="jumbotron-heading">Siêu thị giày chất lượng cao</h1>
-                <p class="lead text-muted mb-0">Uy tín tạo nên thương hiệu với hơn 10 năm cung cấp các sản phầm giày nhập từ Trung Quốc</p>
+                <p class="lead text-muted mb-0">Phân Phối giày chính hãng</p>
+                <p class="lead text-muted mb-0">Uy tín tạo nên thương hiệu</p>
             </div>
         </section>
+
         <!--end of menu-->
         <div class="container">
             <div class="row">
@@ -82,7 +84,7 @@
                         <ul class="list-group category_block">
                             <c:forEach items="${listC}" var="o">
                                 <li class="list-group-item text-white"><a href="#">${o.category_name}</a></li>
-                            </c:forEach>
+                                </c:forEach>
 
                         </ul>
                     </div>
@@ -132,7 +134,7 @@
                         <h5>About</h5>
                         <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
                         <p class="mb-0">
-                            Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.
+                            Trang WEB được lập ra với mục đích cho việc nghiên cứu, chưa có giá trị về mặt thương mại.
                         </p>
                     </div>
 
@@ -140,10 +142,10 @@
                         <h5>Informations</h5>
                         <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
                         <ul class="list-unstyled">
-                            <li><a href="">Link 1</a></li>
-                            <li><a href="">Link 2</a></li>
-                            <li><a href="">Link 3</a></li>
-                            <li><a href="">Link 4</a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100013289594570">Ta Minh Hoang</a></li> <!-- link1 -->
+                            <li><a href="https://www.facebook.com/le.nguyen.quang.uc.2024/">Le Nguyen Quang Duc</a></li> <!-- link2 -->
+                            <li><a href="https://www.facebook.com/KhangAnh.4925">Le Nguyen Anh Khang</a></li> <!-- link3 -->
+                            <li><a href="https://www.facebook.com/profile.php?id=100052231220010">Pham Tien Dung</a></li> <!-- link4 -->
                         </ul>
                     </div>
 
@@ -162,8 +164,8 @@
                         <h5>Contact</h5>
                         <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
                         <ul class="list-unstyled">
-                            <li><i class="fa fa-home mr-2"></i> My company</li>
-                            <li><i class="fa fa-envelope mr-2"></i> email@example.com</li>
+                            <li><i class="fa fa-home mr-2"></i> SORA COMPANY</li>
+                            <li><i class="fa fa-envelope mr-2"></i> SoraStrore.2025@gmail.com</li>
                             <li><i class="fa fa-phone mr-2"></i> + 33 12 14 15 16</li>
                             <li><i class="fa fa-print mr-2"></i> + 33 12 14 15 16</li>
                         </ul>
@@ -172,7 +174,7 @@
                         <p class="float-left">
                             <a href="#">Back to top</a>
                         </p>
-                        <p class="text-right text-muted">created with <i class="fa fa-heart"></i> by <a href="https://t-php.fr/43-theme-ecommerce-bootstrap-4.html"><i>t-php</i></a> | <span>v. 1.0</span></p>
+                        <p class="text-right text-muted">created with <i class="fa fa-heart"></i> by <a href=https://github.com/dunghuynh-teaching/prj301-25sp-se1832-06><i>GROUP6</i></a> | <span></span></p>
                     </div>
                 </div>
             </div>
