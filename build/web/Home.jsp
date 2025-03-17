@@ -27,7 +27,7 @@
                             <a class="nav-link" href="#">Manager Account</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Hello Alias</a>
+                            <a class="nav-link" href="#">Hello</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Logout</a>
@@ -83,7 +83,7 @@
                         <div class="card-header bg-primary text-white text-uppercase"><i class="fa fa-list"></i> Categories</div>
                         <ul class="list-group category_block">
                             <c:forEach items="${listC}" var="o">
-                                <li class="list-group-item text-white"><a href="#">${o.category_name}</a></li>
+                                <li class="list-group-item text-white"><a href="category?category_id=${o.category_id}">${o.category_name}</a></li>
                                 </c:forEach>
 
                         </ul>

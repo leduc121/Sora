@@ -74,7 +74,7 @@ public class ProductsDAO {
         ResultSet rs = null;
 
         try {
-            conn = new DBContext().getConnection(); 
+            conn = new DBContext().getConnection();
             ps = conn.prepareStatement(query);
             rs = ps.executeQuery();
 
@@ -92,7 +92,7 @@ public class ProductsDAO {
                 );
             }
         } catch (Exception e) {
-            e.printStackTrace(); 
+            e.printStackTrace();
         } finally {
             try {
                 if (rs != null) {
@@ -109,6 +109,33 @@ public class ProductsDAO {
             }
         }
         return null;
+    }
+
+    public List<Products> getProductsByCategory(String category_id) {
+        List<Products> list = new ArrayList<>();
+        String query = "select * from Products\n"
+                + "where category_id = ?";
+        try {
+            conn = new DBContext().getConnection();
+            ps = conn.prepareStatement(query);
+            ps.setString(1, category_id);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                list.add(new Products(rs.getInt(1),
+                        rs.getString(2),
+                        rs.getString(3),
+                        rs.getDouble(4),
+                        rs.getString(5),
+                        rs.getString(6),
+                        rs.getInt(7),
+                        rs.getInt(8),
+                        rs.getString(9)));
+
+            }
+        } catch (Exception e) {
+        }
+        return list;
+
     }
 
     public static void main(String[] args) {
