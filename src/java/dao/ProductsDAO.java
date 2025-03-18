@@ -138,6 +138,32 @@ public class ProductsDAO {
 
     }
 
+    public Products getProductsByID(String product_id) {
+        String query = "select * from Products\n"
+                + "where product_id = ?";
+        try {
+            conn = new DBContext().getConnection();
+            ps = conn.prepareStatement(query);
+            ps.setString(1, product_id);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                return new Products(rs.getInt(1),
+                        rs.getString(2),
+                        rs.getString(3),
+                        rs.getDouble(4),
+                        rs.getString(5),
+                        rs.getString(6),
+                        rs.getInt(7),
+                        rs.getInt(8),
+                        rs.getString(9));
+
+            }
+        } catch (Exception e) {
+        }
+        return null;
+
+    }
+
     public static void main(String[] args) {
         ProductsDAO productsDAO = new ProductsDAO();
         List<Products> list = productsDAO.getAllProducts();

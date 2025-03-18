@@ -5,6 +5,7 @@
  */
 package control;
 
+import com.oracle.jrockit.jfr.Producer;
 import dao.ProductsDAO;
 import entity.Categories;
 import entity.Products;
@@ -21,8 +22,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author ADMIN
  */
-@WebServlet(name = "CategoryControl", urlPatterns = {"/category"})
-public class CategoryControl extends HttpServlet {
+@WebServlet(name = "DetailControl", urlPatterns = {"/detail"})
+public class DetailControl extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -36,17 +37,19 @@ public class CategoryControl extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        String cateID = request.getParameter("category_id"); //lay cateId
+        String id = request.getParameter("pid");
         
         ProductsDAO productsDAO = new ProductsDAO();
-        List<Products> list = productsDAO.getProductsByCategory(cateID);
+        Products p = productsDAO.getProductsByID(id);
+        
         List<Categories> listC = productsDAO.getAllCategories();
         Products last = productsDAO.getLast();
-        request.setAttribute("listP", list);
+        
+        request.setAttribute("detail", p);
         request.setAttribute("listC", listC);
         request.setAttribute("p", last);
-        request.setAttribute("tag", cateID);
-        request.getRequestDispatcher("Home.jsp").forward(request, response);
+        request.getRequestDispatcher("Detail.jsp").forward(request, response);
+        
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
